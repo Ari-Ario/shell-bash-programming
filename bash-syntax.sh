@@ -13,3 +13,18 @@ echo "your input is: $input"
 echo -e "enter sth: \c"
 read sth
 echo "you input is: $sth"
+
+#Arithmetic calculations:
+#First for decimal numbers:
+echo "first method of operations on decimal: $( expr 5 + 11 )"
+#or
+echo "second method for arithmetic operations: $(( 5 + 11 ))"
+#The same for all others except multiplication, which needs an extrta \*
+echo "$( expr 5 - 11 )"
+echo "$(( 5 - 11 ))"
+echo "$( expr 5 \* 11 )"
+echo "$(( 5 * 11 ))"
+echo "$( expr 11 / 5 )"
+echo "$(( 11 / 5 ))"
+echo "$( expr 11 % 5 )"
+echo "$(( 11 % 5 ))" #remainder
