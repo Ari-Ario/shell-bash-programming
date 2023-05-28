@@ -28,3 +28,16 @@ echo "$( expr 11 / 5 )"
 echo "$(( 11 / 5 ))"
 echo "$( expr 11 % 5 )"
 echo "$(( 11 % 5 ))" #remainder
+
+#Arithmetic operations for float
+echo " 1.2 + 2.3 " | bc
+echo " 2.3 - 1.2 " | bc
+echo " 1.2 * 2.3 " | bc
+echo " 2.3 / 1.2 " | bc
+
+#Arithmetic operations are the same with variables; for example:
+echo -e "enter first number: \c"
+read num1
+echo -e "enter second number: \c"
+read num2
+echo "scale=2; $num1 / $num2" | bc -l #scale gives the number of floats back
