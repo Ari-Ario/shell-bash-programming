@@ -9,3 +9,7 @@ echo "text for test"
 echo "enter text, signs or numbers:"
 read input
 echo "your input is: $input"
+#reading user-input on the same line:
+echo -e "enter sth: \c"
+read sth
+echo "you input is: $sth"
