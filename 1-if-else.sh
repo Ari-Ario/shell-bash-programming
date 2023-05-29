@@ -15,7 +15,7 @@ then
 	if [ $yn == "y" ]
 	then
 		#this line removes the file in case of permission
-		rm $name
+		rm $name #or "sudo rm -rf $name" to delrt it forcefully
 	#this ellif block takes n as no permitsion and prints no permision
 	elif [ $yn == "n" ]
 	then
@@ -37,7 +37,7 @@ then
 	#if-block delets the directory in case of y-input
 	if [ $yn == "y"]
 	then
-		rm "-r $name"
+		rmdir $name #or "sudo rm -rf $name" to delrt it forcefully
 	#elif-block does not delet the directory and just prints sth
 	elif [ $yn == "n"]
 	then
