@@ -5,14 +5,8 @@ echo -e "enter the name of file, who you want to delet: \c"
 read filename
 #if-elif-else block to delet a directory or a file
 
-# -d findes a directory
-if [ -d $name ]
-then
-	echo "the directory $name found!"
-	#rest will be written
-
 # -f findes a file name
-elif [ -f $name ]
+if [ -f $name ]
 then
 	#this line asks the permission in case of deleting file
 	echo "the file exists, do you want to delet it anyway? y, n"
@@ -30,6 +24,12 @@ then
 		#this line notifies, that the key was nither y nor n
 		echo "False key, y for deleting, n for not deleting."
 	fi
+
+# -d findes a directory
+elif [ -d $name ]
+then
+	echo "the directory $name found!"
+	#rest will be written
 
 else
 	echo "nither a file, nor a directory with this name found!"
