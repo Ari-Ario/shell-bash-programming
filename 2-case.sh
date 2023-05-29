@@ -12,20 +12,24 @@ read op
 echo -e "Enter second number: \c"
 read num2
 
+echo -e "the resulut of $num1 $op $num2 = \c"
 case $op in
 	"+" )
 		echo "$num1 + $num2" | bc
 	;;
 	"-" )
-		echo $"$num1 - $num2" | bc
+		echo "$num1 - $num2" | bc
 	;;
 	"*" )
-		echo $"$num1 * $num2" | bc
+		echo "$num1 * $num2" | bc
 	;;
 	"/" )
-		echo $"$num1 / $num2" | bc
+		echo "$num1 / $num2" | bc
 	;;
 	* )
 		echo "Not a valid operation $op"
+		break
 	;;
 esac
+
+
