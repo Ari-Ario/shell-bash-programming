@@ -41,3 +41,5 @@ read num1
 echo -e "enter second number: \c"
 read num2
 echo "scale=2; $num1 / $num2" | bc -l #scale gives the number of floats back
+
+#syntax of more complex programms is in other sections with examples
