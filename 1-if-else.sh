@@ -27,8 +27,17 @@ then
 # -d findes a directory
 elif [ -d $name ]
 then
-	echo "the directory $name found!"
-	#rest will be written
+	echo -e "the directory $name found. do you want proceed deleting? y, n >> \c"
+	read yn
+	if [ $yn == "y"]
+	then
+		rm "-r $name"
+	elif [ $yn == "n"]
+	then
+		echo "No permision to delet the directory. Try again"
+	else
+		echo "For permision y or n must be entered. Try again"
+	fi
 
 else
 	echo "nither a file, nor a directory with this name found!"
