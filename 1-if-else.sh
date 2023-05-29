@@ -23,4 +23,4 @@ then
 		#this line notifies, that the key was nither y nor n
 		echo "False key, y for deleting, n for not deleting."
 	fi
-
+fi
