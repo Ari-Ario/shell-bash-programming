@@ -27,9 +27,7 @@ case $op in
 		echo "$num1 / $num2" | bc
 	;;
 	* )
-		echo "Not a valid operation $op"
-		break
+		echo "Not a valid operation $op. try again!"
+		"./"2-case.sh #it executes this file again
 	;;
 esac
-
-
