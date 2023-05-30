@@ -43,3 +43,8 @@ read num2
 echo "scale=2; $num1 / $num2" | bc -l #scale gives the number of floats back
 
 #syntax of more complex programms is in other sections with examples
+
+
+#terminal-commands are very important, visit both websites:
+#https://explainshell.com
+#https://devdocs.io
