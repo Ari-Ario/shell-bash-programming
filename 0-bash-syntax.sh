@@ -42,6 +42,22 @@ echo -e "enter second number: \c"
 read num2
 echo "scale=2; $num1 / $num2" | bc -l #scale gives the number of floats back
 
+#array:
+os=("Mac", "Linux", "Windows")
+#changing second element
+os[1]="Ubuntu"
+#printing the second element
+echo "${os[1]}"
+#appending an element as 20th
+os[20]="iOS"
+#printing all elements
+echo "${os[@]}"
+#printing the positions 
+echo "${!os[@]}" #result is: 0 1 2 20
+#counting (number of) elements
+echo "${#os[@]}"
+
+
 #syntax of more complex programms is in other sections with examples
 
 
