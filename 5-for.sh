@@ -10,7 +10,9 @@ done
 
 for comm in ls pwd date
 do
+	#this line prints the written line befor every command
 	echo -----------------$comm------------------
+	#this line carry out the commands
 	$comm
 done
 
