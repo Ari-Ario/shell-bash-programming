@@ -17,7 +17,16 @@ do
 done
 
 
-#or more precisely
+#or more precisely for files and directories in current working directory
 
 echo "||||||||||||||||||||||||||||||||||||||||||||||||"
 
+for item in *
+do
+	if [ -d $item ]
+	then
+		echo "directory: $item"
+	else
+		echo "file: $item"
+	fi
+done
