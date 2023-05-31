@@ -23,10 +23,13 @@ echo "||||||||||||||||||||||||||||||||||||||||||||||||"
 
 for item in *
 do
+	#it searchs if the item is a directory
 	if [ -d $item ]
 	then
 		echo "directory: $item"
+	#if it is not a directory then it is a file
 	else
+	# elif [ -f $item ] ; second possibility
 		echo "file: $item"
 	fi
 done
