@@ -30,4 +30,4 @@ do
 	echo $line
 	sleep 1
 #redirecting our own file 3-while.sh to while loop
-done < 3-while.sh #or just write $path to print above path
+done < 3-while.sh #or just write $path to print file in path above
