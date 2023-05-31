@@ -15,13 +15,19 @@ done
 echo -e "enter the file-path: \c"
 read path
 
-#reading line by line using terminal-command cat, -r escapes backslash
-cat $path | while SLR= read -r line
+#reading line by line using terminal-command cat, -r escapes backslash, IFS is for internal fill separator
+cat $path | while IFS=" " read -r line
 do
 	#printing a line
 	echo $line
 	#waiting a second to print the next line
-	sleep 1
+	#sleep 1
 done
 
-#using redirection
+#using redirection and printing line by line, IFS;Internal fill separator is recommended
+while IFS= read line
+do
+	echo $line
+	sleep 1
+#redirecting our own file 3-while.sh to while loop
+done < 3-while.sh #or just write $path to print above path
