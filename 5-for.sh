@@ -6,4 +6,16 @@ do
 	echo $item
 done
 
+#for-loop which handles terminal-commands in the same directory
+
+for comm in ls pwd date
+do
+	echo -----------------$comm------------------
+	$comm
+done
+
+
+#or more precisely
+
+echo "||||||||||||||||||||||||||||||||||||||||||||||||"
 
