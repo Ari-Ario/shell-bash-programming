@@ -33,3 +33,19 @@ do
 		echo "file: $item"
 	fi
 done
+
+#another syntax of for loop
+for (( i=1; i<=10; i++))
+do
+	#up to 6 but without by break statment
+	if [ $i -ge 6 ]
+	then
+		break
+	#number 3 will be skipped by continue statment
+	elif [ $i -eq 3 ]
+	then
+		continue
+	fi
+	#printing the number
+	echo "number$i"
+done
