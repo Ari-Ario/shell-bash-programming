@@ -72,6 +72,9 @@ readonly -f fun
 echo "pid is: $$"
 kill -9 #pid
 
+# push ctrl+c to terminate an execution and ctrl+z to stop it
+# push ctrl+d to terminate writting (cat) of a text
+
 #syntax of more complex programms is in other sections with examples
 
 
