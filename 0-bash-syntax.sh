@@ -68,6 +68,9 @@ fun(){
 readonly -f fun
 #fun(){ echo "sth"} has an error output too
 
+#pid of the running scrit and killing the execution from another termianl
+echo "pid is: $$"
+kill -9 #pid
 
 #syntax of more complex programms is in other sections with examples
 
