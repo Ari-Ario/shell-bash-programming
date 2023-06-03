@@ -57,6 +57,17 @@ echo "${!os[@]}" #result is: 0 1 2 20
 #counting (number of) elements
 echo "${#os[@]}"
 
+#readonly variables and functions, which cannot be overwritten, for example:
+var=10
+readonly var
+#var=11 has an error output
+
+fun(){
+    echo "inside a function"
+}
+readonly -f fun
+#fun(){ echo "sth"} has an error output too
+
 
 #syntax of more complex programms is in other sections with examples
 
