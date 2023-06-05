@@ -5,13 +5,14 @@
 echo -e "Enter first number: \c"
 read num1
 
+#disable globbing to read * as literal
 set -f
+# another form to read directly
 read -p "Enter the operation [+,-,*,/]: " op
+#enable globbing again
 set +f
-echo $op
 
-echo -e "Enter second number: \c"
-read num2
+read -p "Enter second number: " num2
 
 echo -e "$num1 $op $num2 = \c"
 
