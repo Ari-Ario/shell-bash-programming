@@ -27,4 +27,6 @@ then
 elif [ $op == "/" ]
 then
     echo "$num1/$num2" | bc -l
+else
+    echo "$op is not included in [+.-,*,/]. Try again."
 fi
