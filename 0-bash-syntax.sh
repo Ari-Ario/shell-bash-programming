@@ -76,6 +76,7 @@ kill -9 #pid
 # push ctrl+d to terminate writting (cat) of a text
 
 # syntax of more complex programms is in other sections with examples
+# at last you find some more examples with name: ex....
 
 
 # terminal-commands are very important, visit both websites:
