@@ -13,4 +13,17 @@ read -p "Enter second number: " num2
 case $op in
 	"+")
 		echo "$num1 + $num2" | bc
+        ;;
+    "-")
+        echo "$num1 - $num2" | bc
+        ;;
+    "*")
+        echo "$num1 * $num2" | bc
+        ;;
+    "/")
+        echo "$num1 / $num2" | bc -l
+        ;;
+    *)
+        echo "Operator not included in [+,-,*,/]. Try again"
+        ;;
 esac
