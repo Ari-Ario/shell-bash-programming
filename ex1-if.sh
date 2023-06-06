@@ -16,7 +16,7 @@ read -p "Enter second number: " num2
 
 echo -e "$num1 $op $num2 = \c"
 
-# first and/or conventional method if-else
+# first and/or conventional method if-else; only to print in terminal
 if [ $op == "+" ]
 then
     echo "$num1+$num2" | bc
@@ -39,14 +39,15 @@ else
     fi
 fi
 
-# opening/creating a file in the same directory using if-elif
+# opening/creating a file in the same directory using if-elif; recording it in a file: recorder.txt
 if [ -f recorder.txt ]
 then
-    #cat >> cal-record.txt
+    # if the file recorder.txt exists, it appends to it
     echo -e "$num1 $op $num2 = \c" >> recorder.txt
 else
+    # if file recorder does not exist, it will be created
     touch recorder.txt
-    #cat > cal-record.txt
+    # and it will be overwritten forcefully with command >|
     echo -e "$num1 $op $num2 = \c" >| recorder.txt
 fi
 
@@ -64,5 +65,7 @@ elif [ $op == "/" ]
 then
     echo "$num1/$num2" | bc -l >> recorder.txt
 else
+    # if your operation is not correct, it will not be recorded
     echo "$op is not included in [+.-,*,/]. Try again."
 fi
+exit 0
