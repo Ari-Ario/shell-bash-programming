@@ -16,6 +16,30 @@ read -p "Enter second number: " num2
 
 echo -e "$num1 $op $num2 = \c"
 
+# first and conventional method if-else
+if [ $op == "+" ]
+then
+    echo "$num1+$num2" | bc
+else
+    if [ $op == "-" ]
+    then
+        echo "$num1-$num2" | bc
+    else
+        if [ $op == "*" ]
+        then
+            echo "$num1*$num2" | bc
+        else
+            if [ $op == "/" ]
+            then
+                echo "$num1/$num2" | bc -l
+            else
+                echo "$op is not included in [+.-,*,/]. Try again."
+            fi
+        fi
+    fi
+fi
+
+# second method using if-elif-else
 if [ $op == "+" ]
 then
     echo "$num1+$num2" | bc
