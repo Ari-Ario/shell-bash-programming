@@ -33,5 +33,7 @@ case $op in
         ;;
     *)
         echo "Operator not included in [+,-,*,/]. Try again"
+        echo "False Operator" >> recorder.txt
         ;;
 esac
+exit 0
