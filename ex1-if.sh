@@ -67,5 +67,6 @@ then
 else
     # if your operation is not correct, it will not be recorded
     echo "$op is not included in [+.-,*,/]. Try again."
+    echo "False Operation" >> recorder.txt
 fi
 exit 0

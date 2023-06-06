@@ -20,16 +20,16 @@ fi
 #case block
 case $op in
 	"+")
-		echo "$num1 + $num2" | bc
+		echo "$num1 + $num2" | bc >> recorder.txt
         ;;
     "-")
-        echo "$num1 - $num2" | bc
+        echo "$num1 - $num2" | bc >> recorder.txt
         ;;
     "*")
-        echo "$num1 * $num2" | bc
+        echo "$num1 * $num2" | bc >> recorder.txt
         ;;
     "/")
-        echo "$num1 / $num2" | bc -l
+        echo "$num1 / $num2" | bc -l >> recorder.txt
         ;;
     *)
         echo "Operator not included in [+,-,*,/]. Try again"
