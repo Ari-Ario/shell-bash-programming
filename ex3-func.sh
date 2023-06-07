@@ -14,3 +14,10 @@ function creatfile () {
 	: >>$1
 }
 
+
+# Function to make a directiry
+
+makedir () {
+	mkdir $1
+}
+
