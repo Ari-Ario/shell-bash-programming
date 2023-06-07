@@ -21,3 +21,9 @@ makedir () {
 	mkdir $1
 }
 
+# A single colon in a function is a place holder and is interpreted as NOP or do nothing
+
+donothing () {
+	:
+}
+
