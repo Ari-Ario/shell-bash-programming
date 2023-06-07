@@ -27,3 +27,17 @@ donothing () {
 	:
 }
 
+check () {
+	for name in "dir"
+	do
+		if [ -f "$name" ]
+		then
+			:
+		else
+			echo "$name is a folder."
+			ls $name
+		fi
+		echo "---------------------------------------------------"
+	done
+}
+
