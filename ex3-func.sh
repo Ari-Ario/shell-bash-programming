@@ -8,3 +8,9 @@ function zerofile () {
 	: > $1
 }
 
+# Colon in combination with >> redirection operator, has no effect on the existing file; but it creates one, in case it does not exist
+
+function creatfile () {
+	: >>$1
+}
+
